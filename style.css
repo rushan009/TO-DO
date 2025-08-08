@@ -16,6 +16,28 @@
             justify-content: center;
             align-items: center;
             padding: 2rem;
+            position: relative;
+            border: 10px solid #253c26;
+            /* border-radius: 10px; */
+        }
+        .mode{
+            position: absolute;
+            top:7.5%;
+            right:7.5%;
+            width: 135px;
+            background-color: #253c26;
+            /* border: 2px solid green; */
+            padding: 5px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            
+        }
+
+        .mode .lgdr{
+            font-size: 17px;
+            color: white;    
         }
 
         .main-container {
@@ -97,11 +119,15 @@
         .cut{
             text-decoration: line-through;
         }
+        .uncut{
+            text-decoration: none;
+        }
         .label_of_todo{
             font-size: 24px;
             color: #ffef11;
         }
         .todo{
+            position: relative;
             appearance: none;
             width: 20px;
             height: 20px;
@@ -112,8 +138,16 @@
         .todo:checked{
             width: 20px;
             height: 20px;
-            background-color: #253c26;
+            background-color: #cbcdcb;
             border: 2px solid slateblue ;
+        }
+        .todo:checked::before{
+            content: "✔️";
+            position: absolute;
+            /* position: absolute; */
+            top: -15%;
+            /* font-size: 10px */
+
         }
 
         
